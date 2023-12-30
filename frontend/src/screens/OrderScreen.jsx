@@ -192,14 +192,11 @@ const OrderScreen = () => {
 
                                     {isPending ? <Loader /> : (
                                         <div>
-                                            <Button onClick={onApproveTest} style={{marginBottom: '10px'}}>Test Pay Order</Button>
-                                            <div>
-                                                <PayPalButtons
-                                                    createOrder={createOrder}
-                                                    onApprove={onApprove}
-                                                    onError={onError}
-                                                />
-                                            </div>
+                                            <PayPalButtons
+                                                createOrder={createOrder}
+                                                onApprove={onApprove}
+                                                onError={onError}
+                                            />
                                         </div>
                                     )}
                                 </ListGroup.Item>
